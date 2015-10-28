@@ -55,8 +55,11 @@
                     <li class="page-scroll">
                         <a href="#download">Download</a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#login">Login</a>
+                    <li>
+                        <a href="login">Login</a>
+                    </li>
+                    <li>
+                        <a href="usuario/index">Register</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#contact">Contact</a>
@@ -105,28 +108,6 @@
                     <p>You can download Grayscale for free on the download page at Start Bootstrap. You can also get the source code directly from GitHub if you prefer. Additionally, Grayscale is the first Start Bootstrap theme to come with a LESS file for easy color customization!</p>
                     <a href="http://startbootstrap.com/grayscale" class="btn btn-default btn-lg">Visit Download Page</a>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="login" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-				<form name="banner-login" method="POST" action="${resource('file': 'j_spring_security_check')}">
-					<ul>
-						<li>
-							<label for="j_username">Username:</label>
-							<g:textField name="j_username"/>
-						</li>
-						<li>
-							<label for="j_password">Password:</label>
-							<g:passwordField name="j_password"/>
-						</li>
-					</ul>
-					<div class="button-panel">
-						<g:submitButton name="banner-login-button" value="Log in" />
-					</div>
-				</form>
             </div>
         </div>
     </section>
