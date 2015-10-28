@@ -1,124 +1,64 @@
+<!DOCTYPE html>
 <html>
 <head>
-	<%--<meta name='layout' content='main'/>--%>
-	<title><g:message code="springSecurity.login.title"/></title>
-	<style type='text/css' media='screen'>
-	#login {
-		margin: 15px 0px;
-		padding: 0px;
-		text-align: center;
-	}
-
-	#login .inner {
-		width: 340px;
-		padding-bottom: 6px;
-		margin: 60px auto;
-		text-align: left;
-		border: 1px solid #aab;
-		background-color: #f0f0fa;
-		-moz-box-shadow: 2px 2px 2px #eee;
-		-webkit-box-shadow: 2px 2px 2px #eee;
-		-khtml-box-shadow: 2px 2px 2px #eee;
-		box-shadow: 2px 2px 2px #eee;
-	}
-
-	#login .inner .fheader {
-		padding: 18px 26px 14px 26px;
-		background-color: #f7f7ff;
-		margin: 0px 0 14px 0;
-		color: #2e3741;
-		font-size: 18px;
-		font-weight: bold;
-	}
-
-	#login .inner .cssform p {
-		clear: left;
-		margin: 0;
-		padding: 4px 0 3px 0;
-		padding-left: 105px;
-		margin-bottom: 20px;
-		height: 1%;
-	}
-
-	#login .inner .cssform input[type='text'] {
-		width: 120px;
-	}
-
-	#login .inner .cssform label {
-		font-weight: bold;
-		float: left;
-		text-align: right;
-		margin-left: -105px;
-		width: 110px;
-		padding-top: 3px;
-		padding-right: 10px;
-	}
-
-	#login #remember_me_holder {
-		padding-left: 120px;
-	}
-
-	#login #submit {
-		margin-left: 15px;
-	}
-
-	#login #remember_me_holder label {
-		float: none;
-		margin-left: 0;
-		text-align: left;
-		width: 200px
-	}
-
-	#login .inner .login_message {
-		padding: 6px 25px 20px 25px;
-		color: #c33;
-	}
-
-	#login .inner .text_ {
-		width: 120px;
-	}
-
-	#login .inner .chk {
-		height: 12px;
-	}
-	</style>
+<title>Login</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Tell the browser to be responsive to screen width -->
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<!-- Bootstrap 3.3.5 -->
+<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<!-- Ionicons -->
+<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<!-- Theme style -->
+<link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
+<!-- jQuery 2.1.4 -->
+<script src="../plugins/jQuery/jQuery-2.1.4.min.js"></script>
+<!-- Bootstrap 3.3.5 -->
+<script src="../bootstrap/js/bootstrap.min.js"></script>
 </head>
 
-<body>
-<div id='login'>
-	<div class='inner'>
-		<div class='fheader'><g:message code="springSecurity.login.header"/></div>
+<body class="hold-transition register-page">
+	<div class="register-box">
+		<div class="register-logo">
+			<a href="../../index2.html"><b>Admin</b>LTE</a>
+		</div>
 
-		<g:if test='${flash.message}'>
-			<div class='login_message'>${flash.message}</div>
-		</g:if>
+		<div class="register-box-body">
+			
+			<g:if test='${flash.message}'>
+				<div class='login_message'>
+					${flash.message}
+				</div>
+			</g:if>
 
-		<form action='${postUrl}' method='POST' id='loginForm' class='cssform' autocomplete='off'>
-			<p>
-				<label for='username'><g:message code="springSecurity.login.username.label"/>:</label>
-				<input type='text' class='text_' name='j_username' id='username'/>
-			</p>
+			<form action='${postUrl}' method='POST' id='loginForm' class='cssform' autocomplete='off'>
+				<div class="form-group has-feedback">
+					<input type="email" class="form-control" placeholder="Email" name='j_username' id='username'>
+					<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+				</div>
+				<div class="form-group has-feedback">
+					<input type="password" class="form-control" placeholder="Password" name='j_password' id='password'>
+					<span class="glyphicon glyphicon-lock form-control-feedback"></span>
+				</div>
+				<div class="row">
+					<div class="col-xs-4">
+						<button type="submit" class="btn btn-primary btn-block btn-flat">Login</button>
+					</div>
+				</div>
+			</form>
+			
+		</div><!-- /.form-box -->
+	</div><!-- /.register-box -->
 
-			<p>
-				<label for='password'><g:message code="springSecurity.login.password.label"/>:</label>
-				<input type='password' class='text_' name='j_password' id='password'/>
-			</p>
-
-			<p id="remember_me_holder">
-				<input type='checkbox' class='chk' name='${rememberMeParameter}' id='remember_me' <g:if test='${hasCookie}'>checked='checked'</g:if>/>
-				<label for='remember_me'><g:message code="springSecurity.login.remember.me.label"/></label>
-			</p>
-
-			<p>
-				<input type='submit' id="submit" value='${message(code: "springSecurity.login.button")}'/>
-			</p>
-		</form>
-	</div>
-</div>
-<script type='text/javascript'>
-(function() {
-	document.forms['loginForm'].elements['j_username'].focus();
-})();
-</script>
+	<script type='text/javascript'>
+		(function() {
+			document.forms['loginForm'].elements['j_username'].focus();
+		})();
+	</script>
+	
 </body>
+
 </html>
