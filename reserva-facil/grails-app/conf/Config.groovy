@@ -122,6 +122,9 @@ grails.plugin.springsecurity.userLookup.userDomainClassName = 'br.com.controleAc
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'br.com.controleAcesso.UsuarioPermissao'
 grails.plugin.springsecurity.authority.className = 'br.com.controleAcesso.Permissao'
 
+//grails.plugin.springsecurity.auth.loginFormUrl = '/'
+//grails.plugin.springsecurity.failureHandler.defaultFailureUrl  = '/login'
+
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/':                ['permitAll'],
 	'/index':           ['permitAll'],
