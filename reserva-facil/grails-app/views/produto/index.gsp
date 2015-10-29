@@ -1,7 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style type="text/css">
+.botao {
+	/*centralizar a imagem*/
+	text-align: center;
+	font-size: 35px;
+	vertical-align: middle;
+	line-height: 60px;
+	-webkit-user-select: none;
+	margin-right: 0px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	border: none;
+	
+	bottom: 60px;
+	
+	-webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, .3), 0px 0px 1px
+		rgba(0, 0, 0, .1), inset 0px 1px 0px rgba(255, 255, 255, .25), inset
+		0px -1px 0px rgba(0, 0, 0, .15);
+	-moz-box-shadow: 0px 2px 10px rgba(0, 0, 0, .3), 0px 0px 1px
+		rgba(0, 0, 0, .1), inset 0px 1px 0px rgba(255, 255, 255, .25), inset
+		0px -1px 0px rgba(0, 0, 0, .15);
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, .3), 0px 0px 1px
+		rgba(0, 0, 0, .1), inset 0px 1px 0px rgba(255, 255, 255, .25), inset
+		0px -1px 0px rgba(0, 0, 0, .15);
+	cursor: pointer;
+	height: 56px;
+	position: fixed;
+	-webkit-transition-duration: 0.25s;
+	transition-duration: 0.25s;
+	-webkit-transition-property: background-color, -webkit-box-shadow;
+	transition-property: background-color, box-shadow;
+	right: 24px;
+	width: 56px;
+	z-index: 2;
+}
+</style>
+
 <meta name="layout" content="main" />
+
 </head>
 <body>
 	<!-- Content Header (Page header) -->
@@ -63,6 +102,12 @@
 			<!-- /.box-body -->
 		</div>
 		<!-- /.box -->
+
+		<!--  <a class="botao btn-info"><i class="fa fa-plus"></i></a>    -->
+		<!--  <a class="botao btn-danger pull-left"><i class="fa fa-minus"></i></a>-->
+		<!--  <a class="botao btn-danger"><i class="fa fa-rotate-left"></i></a>    -->
+		<a class="botao btn-primary"><i class="fa fa-unlock-alt"></i></a>
+
 
 	</section>
 	<!-- /.content -->

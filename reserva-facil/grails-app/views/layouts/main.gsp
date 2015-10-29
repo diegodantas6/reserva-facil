@@ -33,6 +33,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
     <script src="plugins/daterangepicker/daterangepicker.js"></script>
 
+	<g:layoutHead/>
+
   </head>
 
   <body class="hold-transition skin-blue sidebar-mini">
