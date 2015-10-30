@@ -55,7 +55,7 @@
 		</div>
 		<!-- /.box -->
 
-		<a href="areaComum/create" class="botao btn-primary"><i class="fa fa-plus"></i></a>
+		<g:link controller="areaComum" action="create" class="botao btn-primary"><i class="fa fa-plus"></i></g:link>
 
 		<!--<a class="botao btn-danger" style="bottom: 80px;"><i
 			class="fa fa-rotate-left"></i></a> <a class="botao btn-primary"><i

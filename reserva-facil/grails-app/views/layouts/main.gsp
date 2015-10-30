@@ -6,19 +6,28 @@
     <title>AdminLTE 2 | Starter</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <!-- Bootstrap 3.3.5 -->
-    <asset:stylesheet src="bootstrap/bootstrap.min.css"/>
+    
+    <!-- Bootstrap 3.3.5 
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">-->
+    <asset:stylesheet src="bootstrap/css/bootstrap.min.css"/>
+    
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- Theme style -->
+    
+    <!-- Theme style 
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">-->
     <asset:stylesheet src="dist/AdminLTE.min.css"/>
     
-    <!-- daterange picker -->
-    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker-bs3.css">
-    <!-- DataTables -->
-    <link rel="stylesheet" href="plugins/datatables/dataTables.bootstrap.css">    
+    <!-- daterange picker
+    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker-bs3.css">--> 
+    <asset:stylesheet src="plugins/daterangepicker/daterangepicker-bs3.css"/>
+    
+    <!-- DataTables 
+    <link rel="stylesheet" href="plugins/datatables/dataTables.bootstrap.css">-->
+    <asset:stylesheet src="plugins/datatables/dataTables.bootstrap.css"/>
 
 	<!-- Theme -->
     <asset:stylesheet src="dist/skins/skin-blue.min.css"/>
@@ -28,16 +37,26 @@
 
     <!-- jQuery 2.1.4 -->
     <asset:javascript src="plugins/jQuery/jQuery-2.1.4.min.js"/>
-    <!-- Bootstrap 3.3.5 -->
-    <asset:javascript src="javascripts/bootstrap.min.js"/>
-    <!-- AdminLTE App -->
-    <asset:javascript src="dist/app.min.js"/>
-    <!-- date-range-picker -->
+    
+    <!-- Bootstrap 3.3.5 
+    <script src="bootstrap/js/bootstrap.min.js"></script>-->
+    <asset:javascript src="bootstrap/bootstrap.min.js"/>
+    
+    <!-- AdminLTE App
+    <script src="dist/js/app.min.js"></script>--> 
+    <asset:javascript src="dist/app.min.js"/>    
+    
+    <!-- date-range-picker 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
+    <script src="plugins/daterangepicker/daterangepicker.js"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
     <asset:javascript src="plugins/daterangepicker/daterangepicker.js"/>
-    <!-- DataTables -->
+    
+    <!-- DataTables 
     <script src="plugins/datatables/jquery.dataTables.pt.min.js"></script>
-    <script src="plugins/datatables/dataTables.bootstrap.min.js"></script>
+    <script src="plugins/datatables/dataTables.bootstrap.min.js"></script>-->
+    <asset:javascript src="plugins/datatables/jquery.dataTables.pt.min.js"/>
+    <asset:javascript src="plugins/datatables/dataTables.bootstrap.min.js"/>
     
 	<g:layoutHead/>
 
@@ -108,7 +127,7 @@
               <ul class="treeview-menu">
                 <li><a href="cliente"><i class="fa fa-circle-o"></i>Cliente</a></li>
                 <li><a href="produto"><i class="fa fa-circle-o"></i>Produto</a></li>
-                <li><a href="areaComum"><i class="fa fa-circle-o"></i>Area Comum</a></li>
+                <li><g:link controller="areaComum"><i class="fa fa-circle-o"></i>Area Comum</g:link></li>
               </ul>
             </li>  
 

@@ -11,11 +11,11 @@ import grails.transaction.Transactional
 @Transactional(readOnly = true)
 class AreaComumController {
 
-    static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
+//    static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
     def index(Integer max) {
-        params.max = Math.min(max ?: 10, 100)
-        respond AreaComum.list(params), model:[areaComumInstanceCount: AreaComum.count()]
+//        params.max = Math.min(max ?: 10, 100)
+//        respond AreaComum.list(params), model:[areaComumInstanceCount: AreaComum.count()]
     }
 
     def show(AreaComum areaComumInstance) {
@@ -28,6 +28,9 @@ class AreaComumController {
 
     @Transactional
     def save(AreaComum areaComumInstance) {
+		
+		println "asdasd"
+		
         if (areaComumInstance == null) {
             notFound()
             return
