@@ -1,7 +1,5 @@
 <%@ page import="br.com.negocio.AreaComum" %>
 
-
-
 <div class="fieldcontain ${hasErrors(bean: areaComumInstance, field: 'condominio', 'error')} required">
 	<label for="condominio">
 		<g:message code="areaComum.condominio.label" default="Condominio" />
