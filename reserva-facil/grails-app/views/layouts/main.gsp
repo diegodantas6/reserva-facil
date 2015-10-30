@@ -7,32 +7,38 @@
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <asset:stylesheet src="bootstrap/bootstrap.min.css"/>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+    <asset:stylesheet src="dist/AdminLTE.min.css"/>
+    
     <!-- daterange picker -->
     <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker-bs3.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="plugins/datatables/dataTables.bootstrap.css">    
 
-    <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+	<!-- Theme -->
+    <asset:stylesheet src="dist/skins/skin-blue.min.css"/>
+    <asset:stylesheet src="util.css"/>
       
     <!-- REQUIRED JS SCRIPTS -->
 
     <!-- jQuery 2.1.4 -->
-    <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <asset:javascript src="plugins/jQuery/jQuery-2.1.4.min.js"/>
     <!-- Bootstrap 3.3.5 -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <asset:javascript src="javascripts/bootstrap.min.js"/>
     <!-- AdminLTE App -->
-    <script src="dist/js/app.min.js"></script>
-    <!-- Custom JS -->
-    <%--<script src="pages-diego/js/diego.js"></script>--%>
+    <asset:javascript src="dist/app.min.js"/>
     <!-- date-range-picker -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
-    <script src="plugins/daterangepicker/daterangepicker.js"></script>
-
+    <asset:javascript src="plugins/daterangepicker/daterangepicker.js"/>
+    <!-- DataTables -->
+    <script src="plugins/datatables/jquery.dataTables.pt.min.js"></script>
+    <script src="plugins/datatables/dataTables.bootstrap.min.js"></script>
+    
 	<g:layoutHead/>
 
   </head>
@@ -79,8 +85,9 @@
           <!-- Sidebar user panel (optional) -->
           <div class="user-panel">
             <div class="pull-left image">
-                 <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-                <!--<img src="img-diego/user.jpg" class="img-circle" alt="User Image">-->
+                <!-- <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">-->
+                <!-- <img src="images/user.jpg" class="img-circle" alt="User Image">-->
+                <asset:image src="user.jpg" class="img-circle" alt="User Image"/>
             </div>
             <div class="pull-left info">
               <p>Diego Dantas</p>
