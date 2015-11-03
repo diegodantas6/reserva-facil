@@ -32,7 +32,7 @@
 					<tbody>
 					
 						<tr>
-							<td>Misc</td>
+							<td><g:link controller="areaComum" action="edit">Misc</g:link></td>
 							<td>Dillo 0.8</td>
 							<td>Embedded devices</td>
 							<td>-</td>
@@ -56,11 +56,6 @@
 		<!-- /.box -->
 
 		<g:link controller="areaComum" action="create" class="botao btn-primary"><i class="fa fa-plus"></i></g:link>
-
-		<!--<a class="botao btn-danger" style="bottom: 80px;"><i
-			class="fa fa-rotate-left"></i></a> <a class="botao btn-primary"><i
-			class="fa fa-unlock-alt"></i></a>-->
-
 
 	</section>
 	<!-- /.content -->
